@@ -1,6 +1,7 @@
 "use client";
 
 import WantedPoster from "./WantedPoster";
+import EvidenceCard from "./EvidenceCard";
 
 export default function InvestigationBoard() {
   return (
@@ -43,6 +44,42 @@ export default function InvestigationBoard() {
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
           <WantedPoster />
         </div>
+
+        {/* Tata Motors */}
+<EvidenceCard
+  title="TATA MOTORS"
+  subtitle="Road Extraction Mission"
+  top="80px"
+  left="120px"
+  rotation="-8deg"
+/>
+
+{/* Tata Steel */}
+<EvidenceCard
+  title="TATA STEEL"
+  subtitle="Industrial Data Investigation"
+  top="500px"
+  left="180px"
+  rotation="6deg"
+/>
+
+{/* AI Project */}
+<EvidenceCard
+  title="MISSION 03"
+  subtitle="AI Captioning System"
+  top="120px"
+  left="980px"
+  rotation="8deg"
+/>
+
+{/* Forecasting */}
+<EvidenceCard
+  title="MISSION 04"
+  subtitle="Stock Forecasting Engine"
+  top="520px"
+  left="980px"
+  rotation="-6deg"
+/>
 
         {/* Red strings */}
         <div className="absolute top-[200px] left-[300px] w-[400px] h-[2px] bg-red-700 rotate-[20deg]" />
