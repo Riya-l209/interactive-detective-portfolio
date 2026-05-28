@@ -98,31 +98,36 @@ export default function InvestigationBoard() {
 
       {/* CASE FILE POPUPS */}
 
-      {activeCase === "tata-motors" && (
-        <CaseFile
-          title="TATA MOTORS"
-          description="
-          Developed an AI-powered road extraction system
-          using satellite imagery and semantic segmentation.
-          Worked with U-Net architecture, Grad-CAM analysis,
-          and Streamlit deployment.
-          "
-          onClose={() => setActiveCase(null)}
-        />
-      )}
 
-      {activeCase === "tata-steel" && (
-        <CaseFile
-          title="TATA STEEL"
-          description="
-          Worked on extracting and analyzing industrial
-          data from reports and dashboards.
-          Built KPI tracking systems and historical
-          performance analysis workflows.
-          "
-          onClose={() => setActiveCase(null)}
-        />
-      )}
+{/* Tata Motors Popup */}
+{activeCase === "tata-motors" && (
+  <CaseFile
+    title="TATA MOTORS"
+    description="
+    Developed an AI-powered road extraction system
+    using satellite imagery and semantic segmentation.
+    Worked with U-Net architecture, Grad-CAM analysis,
+    and Streamlit deployment.
+    "
+    image="/assets/images/tata-motors.jpg"
+    onClose={() => setActiveCase(null)}
+  />
+)}
+
+{/* Tata Steel Popup */}
+{activeCase === "tata-steel" && (
+  <CaseFile
+    title="TATA STEEL"
+    description="
+    Worked on extracting and analyzing industrial
+    data from reports and dashboards.
+    Built KPI tracking systems and historical
+    performance analysis workflows.
+    "
+    image="/assets/images/tata-steel.jpg"
+    onClose={() => setActiveCase(null)}
+  />
+)}
     </div>
   );
 }
