@@ -1,9 +1,22 @@
+"use client";
+
+import { useState } from "react";
+
 import InvestigationBoard from "./components/InvestigationBoard";
+import IntroSequence from "./components/IntroSequence";
 
 export default function Home() {
+  const [introFinished, setIntroFinished] = useState(false);
+
   return (
-    <main className="w-screen h-screen overflow-hidden">
+    <>
+      {!introFinished && (
+        <IntroSequence
+          onComplete={() => setIntroFinished(true)}
+        />
+      )}
+
       <InvestigationBoard />
-    </main>
+    </>
   );
 }
